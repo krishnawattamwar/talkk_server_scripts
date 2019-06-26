@@ -1,7 +1,7 @@
 #!/bin/sh
 #percentage space
 ADBPATH="/opt/genymobile/genymotion/tools/"
-df -h | grep "swap" | while read output;
+df -h | grep "root" | while read output;
 do
 #echo $output
 available=$(echo $output | awk '{ print $4 }' )

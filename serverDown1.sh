@@ -12,33 +12,33 @@ ping -c 3 $SERVERIP21 > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
    # Use your favorite mailer here:
-	echo -e "$SERVERIP21 Server is down on $(date) \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL 
+	echo -e "$SERVERIP21 Server is down on $(date +" %d/%m/%Y at %R") \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL 
 fi
 
 ping -c 3 $SERVERIP26 > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
    # Use your favorite mailer here:
-	echo -e "$SERVERIP26 Server is down on $(date) \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL 
+	echo -e "$SERVERIP26 Server is down on $(date +" %d/%m/%Y at %R") \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL 
 fi
 
 ping -c 3 $SERVERIP27 > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
    # Use your favorite mailer here:
-	echo -e "$SERVERIP27 Server is down on $(date) \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL
+	echo -e "$SERVERIP27 Server is down on $(date +" %d/%m/%Y at %R") \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL
 fi
 
 ping -c 3 $SERVERIP28 > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
    # Use your favorite mailer here:
-	echo -e "$SERVERIP28 Server is down on $(date) \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL
+	echo -e "$SERVERIP28 Server is down on $(date +" %d/%m/%Y at %R") \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL
 fi
 
 ping -c 3 $SERVERIP29 > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
    # Use your favorite mailer here:
-	echo -e "$SERVERIP29 Server is down on $(date) \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL
+	echo -e "$SERVERIP29 Server is down on $(date +" %d/%m/%Y at %R") \n\n\n Regards, \nTeam ITSupport" | mail -s "talkk server is down" $NOTIFYEMAIL
 fi

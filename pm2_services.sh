@@ -10,6 +10,6 @@ elif [ $count -eq 0 ];
 then
 		echo "Hello Support_Team, \n\npm2 services is down on $(hostname -I | awk '{print $1}') server at $(date +" %d/%m/%Y at %R"). \nPlease check the issue and Reslove it. \n\n\nRegards, \nTeam ItSupport"  | mail -s "pm2 service is down on $(hostname -I | awk '{print $1}') server" $NOTIFYMAIL
 else
- echo "NoChange"
+ echo "NoChange" > /dev/null  2>&1
 fi
 

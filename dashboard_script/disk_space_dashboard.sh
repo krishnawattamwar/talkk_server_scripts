@@ -7,7 +7,7 @@ echo "$(hostname -I | awk '{print $1}') Server is Running out of space \"$partit
 fi
 
 if [ $output -lt 84 ];then
-rm $FILE_PATH/disk_space.txt
+rm $FILE_PATH/disk_space.txt  > /dev/null 2>&1
 fi
 
 done

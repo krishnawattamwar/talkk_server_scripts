@@ -1,5 +1,5 @@
 #!/bin/sh
-FILE_PATH="/opt/network_info/"
+FILE_PATH="/opt/network_info"
 df -h / |  awk '{ if(NR==2) print $5 }' | cut -c 1,2 | while read output;
 do
 if [ $output -gt 84 ];then

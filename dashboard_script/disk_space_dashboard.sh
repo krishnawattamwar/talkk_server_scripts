@@ -1,5 +1,5 @@
 #!/bin/sh
-FILE_PATH="/opt/network_info/"
+FILE_PATH="/opt/network_info"
 df -h / |  awk '{ if(NR==2) print $5 }' | cut -c 1,2 | while read output;
 do
 if [ $output -gt 84 ];then
@@ -7,7 +7,7 @@ echo "$(hostname -I | awk '{print $1}') Server is Running out of space \"$partit
 fi
 
 if [ $output -lt 84 ];then
-rm $FILE_PATH/disk_space.txt
+rm $FILE_PATH/disk_space.txt  > /dev/null 2>&1
 fi
 
 done

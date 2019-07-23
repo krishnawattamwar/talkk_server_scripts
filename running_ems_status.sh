@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 30m
+#sleep 30m
 NOTIFYMAIL="itsupport@graymatrix.com,kalpesh.shedge@graymatrix.com,faiyaz.siddiqui@graymatrix.com"
 ADBPATH="/opt/genymobile/genymotion/tools/"
 running_ems=$(${ADBPATH}./adb devices -l | awk {'print $4'} | cut -c 7-50)
